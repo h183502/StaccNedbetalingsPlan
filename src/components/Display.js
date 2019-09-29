@@ -22,16 +22,16 @@ class Display extends React.Component{
     calculateNR = () => {
         const {belop} = this.props;
 
-        if (1000 < belop && belop < 100000){
+        if (1000 < belop && belop < 1000000){
             this.setState({NR: 0.03})
         }
-        if (100000 < belop && belop < 500000){
+        if (1000000 < belop && belop < 2000000){
             this.setState({NR: 0.05})
         }
-        if (500000 < belop && belop < 1000000){
+        if (2000000 < belop && belop < 40000000){
             this.setState({NR: 0.08})
         }
-        if (1000000 < belop){
+        if (4000000 < belop){
             this.setState({NR: 0.1})
         }
     }
